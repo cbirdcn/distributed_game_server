@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.login_server.v1;
+
+option go_package = "login_server/api/login_server/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.login_server.v1";
+
+service Login_server {
+	rpc CreateLogin_server (CreateLogin_serverRequest) returns (CreateLogin_serverReply);
+	rpc UpdateLogin_server (UpdateLogin_serverRequest) returns (UpdateLogin_serverReply);
+	rpc DeleteLogin_server (DeleteLogin_serverRequest) returns (DeleteLogin_serverReply);
+	rpc GetLogin_server (GetLogin_serverRequest) returns (GetLogin_serverReply);
+	rpc ListLogin_server (ListLogin_serverRequest) returns (ListLogin_serverReply);
+}
+
+message CreateLogin_serverRequest {}
+message CreateLogin_serverReply {}
+
+message UpdateLogin_serverRequest {}
+message UpdateLogin_serverReply {}
+
+message DeleteLogin_serverRequest {}
+message DeleteLogin_serverReply {}
+
+message GetLogin_serverRequest {}
+message GetLogin_serverReply {}
+
+message ListLogin_serverRequest {}
+message ListLogin_serverReply {}
